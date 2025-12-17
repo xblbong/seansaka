@@ -1,467 +1,350 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Seansaka — Jasa Pengiriman Trafo & Alat Berat</title>
-    <meta
-      name="description"
-      content="PT. Seansaka Sinergi Transportasi: Jasa transportasi dan pengiriman trafo serta alat berat yang aman, cepat, dan profesional. Hubungi kami untuk konsultasi gratis."
-    />
-    <!-- Mengubah Theme Color menjadi Oranye -->
-    <meta name="theme-color" content="#ea580c" />
-    
-    <!-- Open Graph -->
-    <meta
-      property="og:title"
-      content="Seansaka — Jasa Pengiriman Trafo & Alat Berat"
-    />
-    <meta
-      property="og:description"
-      content="Aman, cepat, profesional. Jangkauan seluruh Indonesia. Hubungi kami sekarang!"
-    />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:image"
-      content="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1600&auto=format&fit=crop"
-    />
-    <meta property="og:url" content="https://www.seansaka.com" />
 
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              // Mengganti palet Navy menjadi Orange (Primary)
-              primary: {
-                50: "#fff7ed",
-                100: "#ffedd5",
-                200: "#fed7aa",
-                300: "#fdba74",
-                400: "#fb923c",
-                500: "#f97316",
-                600: "#ea580c", // Warna Utama (Vibrant Orange)
-                700: "#c2410c", // Hover state
-                800: "#9a3412",
-                900: "#7c2d12",
-                950: "#431407", // Darkest Orange/Brown for gradients
-              },
-            },
-            boxShadow: {
-              soft: "0 10px 30px rgba(234, 88, 12, 0.1)", // Shadow dengan hint orange tipis
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seansaka — Transportasi | Warehouse | Rental</title>
+  <meta name="description"
+    content="PT. Seansaka Sinergi Transportasi: Jasa transportasi dan pengiriman trafo serta alat berat yang aman, cepat, dan profesional. Hubungi kami untuk konsultasi gratis." />
+  <!-- Mengubah Theme Color menjadi Oranye -->
+  <meta name="theme-color" content="#ea580c" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Seansaka — Transportasi | Warehouse | Rental" />
+  <meta property="og:description"
+    content="Aman, cepat, profesional. Jangkauan seluruh Indonesia. Hubungi kami sekarang!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image"
+    content="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1600&auto=format&fit=crop" />
+  <meta property="og:url" content="https://www.seansaka.com" />
+
+  <!-- Font Awesome CDN (Wajib ada agar logo & ikon muncul) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            // Mengganti palet Navy menjadi Orange (Primary)
+            primary: {
+              50: "#fff7ed",
+              100: "#ffedd5",
+              200: "#fed7aa",
+              300: "#fdba74",
+              400: "#fb923c",
+              500: "#f97316",
+              600: "#ea580c", // Warna Utama (Vibrant Orange)
+              700: "#c2410c", // Hover state
+              800: "#9a3412",
+              900: "#7c2d12",
+              950: "#431407", // Darkest Orange/Brown for gradients
             },
           },
+          boxShadow: {
+            soft: "0 10px 30px rgba(234, 88, 12, 0.1)", // Shadow dengan hint orange tipis
+          },
         },
-      };
-    </script>
-    <link rel="icon" href="/favicon.ico" />
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-    </style>
-  </head>
-  <body class="antialiased text-slate-800 bg-white">
-    
-    <!-- Navbar -->
-    <header
-      id="navbar"
-      class="sticky top-0 z-50 bg-white backdrop-blur border-b border-primary-100 transition-shadow"
-    >
-      <div class="max-w-7xl mx-auto px-4">
-        <div class="flex items-center justify-between h-20">
-          <a href="#home" class="flex items-center gap-3">
-            <!-- Ganti src logo jika ada file baru, sementara pakai placeholder atau teks jika gambar belum diupdate warnanya -->
-            <img src="./img/logo.jpg" alt="logo seansaka" class="w-44 rounded-md" />
-          </a>
-          
-          <nav class="hidden md:flex items-center gap-8 font-medium text-slate-600">
-            <a href="#tentang" class="hover:text-primary-600 transition-colors">Tentang</a>
-            <a href="#layanan" class="hover:text-primary-600 transition-colors">Layanan</a>
-            <a href="#keunggulan" class="hover:text-primary-600 transition-colors">Keunggulan</a>
-            <a href="#proses" class="hover:text-primary-600 transition-colors">Proses</a>
-            <a href="#kontak" class="hover:text-primary-600 transition-colors">Kontak</a>
-            <a
-              href="https://wa.me/628155000151?text=Halo%20Seansaka%2C%20saya%20ingin%20konsultasi%20pengiriman%20trafo%20%2F%20alat%20berat."
-              class="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-primary-600 text-white hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-400 shadow-soft transition-all"
-              >Hubungi Kami</a
-            >
-          </nav>
+      },
+    };
+  </script>
+  <link rel="icon" href="/favicon.ico" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
 
-          <!-- Mobile Menu Button -->
-          <button
-            id="menuBtn"
-            aria-label="Buka menu"
-            class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-md border border-slate-300 text-slate-600 hover:text-primary-600 hover:border-primary-400"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3.75 5.25a.75.75 0 0 1 .75-.75h15a.75.75 0 0 1 0 1.5h-15a.75.75 0 0 1-.75-.75Zm0 6a.75.75 0 0 1 .75-.75h15a.75.75 0 0 1 0 1.5h-15a.75.75 0 0 1-.75-.75Zm0 6a.75.75 0 0 1 .75-.75h15a.75.75 0 0 1 0 1.5h-15a.75.75 0 0 1-.75-.75Z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
-      <!-- Mobile Menu -->
-      <div
-        id="mobileMenu"
-        class="md:hidden hidden border-t border-slate-100 bg-white absolute w-full shadow-lg"
-      >
-        <nav class="px-4 py-3 flex flex-col gap-3 text-slate-700">
-          <a href="#tentang" class="py-2 hover:text-primary-600">Tentang</a>
-          <a href="#layanan" class="py-2 hover:text-primary-600">Layanan</a>
-          <a href="#keunggulan" class="py-2 hover:text-primary-600">Keunggulan</a>
-          <a href="#proses" class="py-2 hover:text-primary-600">Proses</a>
-          <a href="#kontak" class="py-2 hover:text-primary-600">Kontak</a>
-          <a
-            href="https://wa.me/628155000151?text=Halo%20Seansaka%2C%20saya%20ingin%20konsultasi%20pengiriman%20trafo%20%2F%20alat%20berat."
-            class="mt-2 inline-flex items-center justify-center gap-2 px-4 py-3 rounded-md bg-primary-600 text-white hover:bg-primary-700 font-semibold"
-            >Hubungi Kami</a
-          >
+<body class="antialiased text-slate-800 bg-white">
+
+  <!-- Navbar -->
+  <header id="navbar" class="sticky top-0 z-50 bg-white backdrop-blur border-b border-primary-100 transition-shadow">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-center justify-between h-20">
+
+        <!-- LOGO BARU (Font Awesome + Text) -->
+        <a href="#home" class="flex items-center gap-3 group" aria-label="Seansaka Homepage">
+          <img src="/img/logo.jpg" alt="logo" class="w-32 md:w-36 lg:w-40 object-contain" />
+          <!-- Ikon Box -->
+          <!-- <div
+            class="w-10 h-10 rounded-lg bg-primary-600 text-white flex items-center justify-center shadow-md group-hover:scale-110 transition-transform duration-300">
+            <i class="fa-solid fa-truck-fast text-lg"></i>
+          </div> -->
+          <!-- Teks Logo -->
+          <!-- <div class="flex flex-col">
+            <h1 class="text-2xl font-extrabold tracking-tighter leading-none text-slate-800">
+              SEAN<span class="text-primary-600">SAKA</span>
+            </h1>
+            <span class="text-[10px] font-bold tracking-[0.2em] text-slate-500 uppercase">
+              Logistics Group
+            </span>
+          </div> -->
+        </a>
+        <!-- END LOGO BARU -->
+
+        <nav class="hidden md:flex items-center gap-8 font-medium text-slate-600">
+          <a href="#tentang" class="hover:text-primary-600 transition-colors">Tentang</a>
+          <a href="#layanan" class="hover:text-primary-600 transition-colors">Layanan</a>
+          <a href="#keunggulan" class="hover:text-primary-600 transition-colors">Keunggulan</a>
+          <a href="#proses" class="hover:text-primary-600 transition-colors">Proses</a>
+          <a href="#kontak" class="hover:text-primary-600 transition-colors">Kontak</a>
+          <a href="https://wa.me/628155000151?text=Halo%20Seansaka%2C%20saya%20ingin%20konsultasi%20pengiriman%20trafo%20%2F%20alat%20berat."
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-primary-600 text-white hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-400 shadow-soft transition-all">Hubungi
+            Kami</a>
         </nav>
+
+        <!-- Mobile Menu Button -->
+        <button id="menuBtn" aria-label="Buka menu"
+          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-md border border-slate-300 text-slate-600 hover:text-primary-600 hover:border-primary-400">
+          <i class="fa-solid fa-bars text-lg"></i>
+        </button>
       </div>
-    </header>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-100 bg-white absolute w-full shadow-lg">
+      <nav class="px-4 py-3 flex flex-col gap-3 text-slate-700">
+        <a href="#tentang" class="py-2 hover:text-primary-600">Tentang</a>
+        <a href="#layanan" class="py-2 hover:text-primary-600">Layanan</a>
+        <a href="#keunggulan" class="py-2 hover:text-primary-600">Keunggulan</a>
+        <a href="#proses" class="py-2 hover:text-primary-600">Proses</a>
+        <a href="#kontak" class="py-2 hover:text-primary-600">Kontak</a>
+        <a href="https://wa.me/628155000151?text=Halo%20Seansaka%2C%20saya%20ingin%20konsultasi%20pengiriman%20trafo%20%2F%20alat%20berat."
+          class="mt-2 inline-flex items-center justify-center gap-2 px-4 py-3 rounded-md bg-primary-600 text-white hover:bg-primary-700 font-semibold">Hubungi
+          Kami</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="relative min-h-[78vh] grid place-items-center">
-      <img
-        src="./img/banner.jpg"
-        alt="Armada transportasi alat berat"
-        class="absolute inset-0 w-full h-full object-cover"
-      />
-      <!-- Gradient overlay diubah ke Oranye/Dark Brown -->
-      <div
-        class="absolute inset-0 bg-gradient-to-b from-primary-950/80 via-primary-950/80 to-primary-950/80"
-      ></div>
+  <!-- Hero Section -->
+  <section id="home" class="relative min-h-[78vh] grid place-items-center">
+    <img src="./img/banner.jpg" alt="Armada transportasi alat berat"
+      class="absolute inset-0 w-full h-full object-cover" />
+    <!-- Gradient overlay diubah ke Oranye/Dark Brown -->
+    <div class="absolute inset-0 bg-gradient-to-b from-primary-950/55 via-primary-950/80 to-primary-950/80"></div>
 
-      <div
-        class="relative z-10 max-w-7xl mx-auto px-4 py-24 text-center text-white"
-      >
-        <span
-          class="inline-block rounded-full border border-white/30 px-3 py-1 text-xs tracking-widest uppercase mb-4 bg-white/10 backdrop-blur-sm"
-          >PT. Seansaka Sinergi Transportasi</span
-        >
-        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
-          Jasa Pengiriman Trafo & Alat Berat
-        </h1>
-        <p class="mt-4 text-base md:text-lg text-white/90 max-w-2xl mx-auto">
-          Aman, cepat, dan profesional. Jangkauan seluruh Indonesia dengan
-          armada lengkap dan tim berpengalaman.
-        </p>
-        <div
-          class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4"
-        >
-          <a
-            href="https://wa.me/628155000151?text=Halo%20Seansaka%2C%20saya%20ingin%20konsultasi%20pengiriman%20trafo%20%2F%20alat%20berat."
-            class="inline-flex items-center gap-2 px-6 py-3 rounded-md bg-primary-600 text-white font-semibold shadow-soft hover:bg-primary-500 transition-all border border-transparent hover:border-primary-400"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="w-5 h-5"
-            >
-              <path
-                d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.62-6.003C.122 5.29 5.33 0 12.06 0c3.182 0 6.167 1.24 8.41 3.49a11.77 11.77 0 013.48 8.39c-.003 6.73-5.31 11.94-11.84 11.94a11.9 11.9 0 01-6.012-1.62L.057 24zm6.597-3.807c1.72.995 3.27 1.6 5.392 1.602 5.448 0 9.889-4.43 9.892-9.885.003-5.462-4.415-9.89-9.872-9.893-5.452-.003-9.89 4.41-9.894 9.873-.002 2.225.651 3.891 1.746 5.634L3.53 20.47l3.123-.277zM8.87 7.36c-.147-.327-.303-.334-.444-.34-.114-.005-.246-.005-.379-.005a.73.73 0 00-.529.246c-.183.2-.694.676-.694 1.65s.71 1.916.81 2.05c.1.133 1.387 2.22 3.36 3.02 1.66.654 1.997.525 2.355.492.36-.033 1.164-.476 1.329-.936.164-.46.164-.854.115-.936-.049-.082-.18-.131-.379-.23-.2-.098-1.164-.573-1.343-.638-.18-.065-.31-.098-.444.098-.133.197-.51.638-.625.77-.115.131-.23.148-.43.049-.2-.098-.843-.31-1.604-.988-.592-.527-.992-1.177-1.107-1.375-.115-.197-.012-.304.086-.402.088-.088.2-.23.295-.344.098-.115.131-.197.197-.328.065-.131.033-.246-.016-.344-.049-.098-.43-1.038-.59-1.416z"
-              />
-            </svg>
-            Konsultasi via WhatsApp
-          </a>
-          <a
-            href="#layanan"
-            class="inline-flex items-center gap-2 px-6 py-3 rounded-md bg-white text-primary-600 font-semibold hover:bg-slate-50"
-            >Lihat Layanan</a
-          >
-        </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 py-24 text-center text-white">
+      <span
+        class="inline-block rounded-full border border-white/30 px-3 py-1 text-xs tracking-widest uppercase mb-4 bg-white/10 backdrop-blur-sm">PT.
+        Seansaka Sinergi Transportasi</span>
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+        Transportasi | Warehouse | Rental
+      </h1>
+      <p class="mt-4 text-base md:text-lg text-white/90 max-w-2xl mx-auto">
+        Melayani berbagai kebutuhan logistik, transportasi, sewa gudang dan sewa peralatan handling & lifting
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="https://wa.me/628155000151?text=Halo%20Seansaka%2C%20saya%20ingin%20konsultasi%20pengiriman%20trafo%20%2F%20alat%20berat."
+          class="inline-flex items-center gap-2 px-6 py-3 rounded-md bg-primary-600 text-white font-semibold shadow-soft hover:bg-primary-500 transition-all border border-transparent hover:border-primary-400">
+          <i class="fa-brands fa-whatsapp"></i>
+          Konsultasi via WhatsApp
+        </a>
+        <a href="#layanan"
+          class="inline-flex items-center gap-2 px-6 py-3 rounded-md bg-white text-primary-600 font-semibold hover:bg-slate-50">Lihat
+          Layanan</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Tentang -->
-    <section id="tentang" class="py-16 md:py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4">
-        <div class="grid md:grid-cols-2 gap-10 items-center">
-          <div>
-            <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">
-              Tentang <span class="text-primary-600">Seansaka</span>
-            </h2>
-            <p class="mt-4 text-slate-600 leading-relaxed">
-              <strong>PT. Seansaka Sinergi Transportasi</strong> adalah penyedia jasa transportasi yang berfokus pada
-              pengiriman <strong>trafo</strong>, <strong>alat berat</strong>,
-              dan barang industri. Kami mengutamakan keamanan, ketepatan waktu,
-              dan transparansi biaya untuk memastikan proses pengiriman Anda
-              berjalan lancar dari awal hingga akhir.
-            </p>
-            <ul class="mt-6 space-y-3 text-slate-700">
-              <li class="flex items-start gap-3">
-                <span class="mt-1 w-2 h-2 rounded-full bg-primary-600"></span>
-                Armada khusus: lowbed, trailer, dan kendaraan pendukung.
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="mt-1 w-2 h-2 rounded-full bg-primary-600"></span> Tim
-                berpengalaman dalam handling muatan berat dan over-dimension.
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="mt-1 w-2 h-2 rounded-full bg-primary-600"></span>
-                Layanan door-to-door dengan cakupan nasional.
-              </li>
-            </ul>
-            <div class="mt-8 flex gap-3">
-              <a
-                href="https://wa.me/628155000151?text=Halo%20Seansaka%2C%20saya%20ingin%20konsultasi."
-                class="px-5 py-3 rounded-md bg-primary-600 text-white hover:bg-primary-700 shadow-md"
-                >Hubungi Kami</a
-              >
-              <a
-                href="#layanan"
-                class="px-5 py-3 rounded-md border border-primary-600 text-primary-600 hover:bg-primary-50"
-                >Pelajari Layanan</a
-              >
-            </div>
-          </div>
-          <div class="relative">
-            <img
-              src="./img/img-2.jpg"
-              alt="Proses pengiriman alat berat"
-              class="w-full rounded-2xl shadow-soft"
-            />
-            <div
-              class="absolute -bottom-5 -right-5 bg-white p-4 rounded-2xl shadow-soft hidden md:block border border-slate-100"
-            >
-              <p class="text-sm text-slate-600 font-medium">
-                <span class="text-primary-600">✓</span> Jangkauan Nasional <br>
-                <span class="text-primary-600">✓</span> Asuransi Opsional <br>
-                <span class="text-primary-600">✓</span> SOP Ketat
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Layanan -->
-    <section id="layanan" class="py-16 md:py-20 bg-slate-50">
-      <div class="max-w-7xl mx-auto px-4">
-        <div class="text-center max-w-2xl mx-auto">
-          <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">
-            Layanan Kami
-          </h2>
-          <p class="mt-3 text-slate-600">
-            Spesialis transportasi untuk industri energi dan konstruksi.
-          </p>
-        </div>
-
-        <div class="mt-10 grid md:grid-cols-3 gap-6">
-          <!-- Card 1 -->
-          <div
-            class="p-6 rounded-2xl bg-white shadow-soft hover:shadow-lg transition border-b-4 border-transparent hover:border-primary-500"
-          >
-            <div
-              class="w-12 h-12 rounded-md bg-primary-600 text-white grid place-items-center"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                class="w-6 h-6"
-              >
-                <path
-                  d="M2.25 13.5l3-2.25v6.75H21a.75.75 0 00.75-.75V9a.75.75 0 00-.75-.75h-4.5V6.75A2.25 2.25 0 0014.25 4.5h-1.5A2.25 2.25 0 0010.5 6.75V8.25H6a.75.75 0 00-.45.15L2.25 10.5v3z"
-                />
-              </svg>
-            </div>
-            <h3 class="mt-4 text-xl font-bold text-slate-900">Pengiriman Trafo</h3>
-            <p class="mt-2 text-slate-600">
-              Handling khusus untuk trafo: pengikatan, penyangga, dan pengamanan
-              sesuai SOP agar aman sampai tujuan.
-            </p>
-          </div>
-          <!-- Card 2 -->
-          <div
-            class="p-6 rounded-2xl bg-white shadow-soft hover:shadow-lg transition border-b-4 border-transparent hover:border-primary-500"
-          >
-            <div
-              class="w-12 h-12 rounded-md bg-primary-600 text-white grid place-items-center"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                class="w-6 h-6"
-              >
-                <path d="M3 4.5h18v3H3v-3zM3 9.75h18v3H3v-3zM3 15h18v3H3v-3z" />
-              </svg>
-            </div>
-            <h3 class="mt-4 text-xl font-bold text-slate-900">Transportasi Alat Berat</h3>
-            <p class="mt-2 text-slate-600">
-              Lowbed & trailer untuk excavator, crane, genset, dan muatan
-              over-dimension/over-weight.
-            </p>
-          </div>
-          <!-- Card 3 -->
-          <div
-            class="p-6 rounded-2xl bg-white shadow-soft hover:shadow-lg transition border-b-4 border-transparent hover:border-primary-500"
-          >
-            <div
-              class="w-12 h-12 rounded-md bg-primary-600 text-white grid place-items-center"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                class="w-6 h-6"
-              >
-                <path
-                  d="M4.5 6.75h15v10.5a2.25 2.25 0 01-2.25 2.25h-10.5A2.25 2.25 0 014.5 17.25V6.75z"
-                />
-              </svg>
-            </div>
-            <h3 class="mt-4 text-xl font-bold text-slate-900">Transportasi Industri</h3>
-            <p class="mt-2 text-slate-600">
-              Pengiriman komponen pabrik, material proyek, hingga logistik
-              pendukung operasional.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Keunggulan -->
-    <section id="keunggulan" class="py-16 md:py-20 bg-white">
-      <div
-        class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-10 items-center"
-      >
-        <!-- Konten teks -->
+  <!-- Tentang -->
+  <section id="tentang" class="py-16 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
         <div>
-          <div class="text-center lg:text-left max-w-2xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">
-              Kenapa Memilih Kami?
-            </h2>
-            <p class="mt-3 text-slate-600">
-              Nilai tambah yang membuat
-              <span class="font-semibold text-primary-600">Seansaka</span> berbeda.
-            </p>
-          </div>
-
-          <!-- Card keunggulan -->
-          <div class="mt-10 grid sm:grid-cols-2 gap-6">
-            <div
-              class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-lg hover:border-primary-200 transition transform hover:-translate-y-1"
-            >
-              <h3 class="text-lg font-bold text-slate-800">Aman & Terstandar</h3>
-              <p class="mt-2 text-slate-600 text-sm">
-                SOP ketat, pengikatan profesional, dan asuransi opsional.
-              </p>
-            </div>
-            <div
-              class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-lg hover:border-primary-200 transition transform hover:-translate-y-1"
-            >
-              <h3 class="text-lg font-bold text-slate-800">Tepat Waktu</h3>
-              <p class="mt-2 text-slate-600 text-sm">
-                Perencanaan rute & jadwal yang efisien.
-              </p>
-            </div>
-            <div
-              class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-lg hover:border-primary-200 transition transform hover:-translate-y-1"
-            >
-              <h3 class="text-lg font-bold text-slate-800">Armada Lengkap</h3>
-              <p class="mt-2 text-slate-600 text-sm">
-                Lowbed, trailer, dan unit pendukung siap jalan.
-              </p>
-            </div>
-            <div
-              class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-lg hover:border-primary-200 transition transform hover:-translate-y-1"
-            >
-              <h3 class="text-lg font-bold text-slate-800">Layanan Responsif</h3>
-              <p class="mt-2 text-slate-600 text-sm">Tim siap bantu 7 hari seminggu.</p>
-            </div>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">
+            Tentang <span class="text-primary-600">Seansaka</span>
+          </h2>
+          <p class="mt-4 text-slate-600 leading-relaxed">
+            <strong>Solusi tepat penanganan kargo logistik</strong>
+            <br>
+            Kami sebagai rekan penanganan kargo logistik yang memiliki komitmen untuk membantu
+            menyiapkan jasa transportasi dan bongkar muat dengan berbagai jenis layanan secara door to door
+          </p>
+          <div class="mt-8 flex gap-3">
+            <a href="https://wa.me/628155000151?text=Halo%20Seansaka%2C%20saya%20ingin%20konsultasi."
+              class="px-5 py-3 rounded-md bg-primary-600 text-white hover:bg-primary-700 shadow-md">Hubungi Kami</a>
+            <a href="#layanan"
+              class="px-5 py-3 rounded-md border border-primary-600 text-primary-600 hover:bg-primary-50">Pelajari
+              Layanan</a>
           </div>
         </div>
-
-        <!-- Gambar -->
-        <div class="flex justify-center lg:justify-end">
-          <img
-            src="./img/img-4.jpg"
-            alt="truk pengangkut alat berat"
-            class="w-full max-w-md lg:max-w-lg rounded-2xl shadow-soft border-4 border-white"
-          />
+        <div class="relative">
+          <img src="./img/truk.jpeg" alt="Proses pengiriman alat berat" class="w-full rounded-2xl shadow-soft" />
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Proses -->
-    <section id="proses" class="py-16 md:py-20 bg-slate-50">
-      <div class="max-w-7xl mx-auto px-4">
-        <div class="text-center max-w-2xl mx-auto">
-          <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">
-            Proses Pemesanan
-          </h2>
-          <p class="mt-3 text-slate-600">
-            Mudah dan transparan dari awal sampai akhir.
+  <!-- Layanan -->
+  <section id="layanan" class="py-16 md:py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">
+          Layanan Kami
+        </h2>
+        <p class="mt-3 text-slate-600">
+          Transportasi kargo secara door to door untuk industri energi dan konstruksi
+        </p>
+      </div>
+
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div
+          class="p-6 rounded-2xl bg-white shadow-soft hover:shadow-lg transition border-b-4 border-transparent hover:border-primary-500">
+          <div class="w-12 h-12 rounded-md bg-primary-600 text-white grid place-items-center">
+            <i class="fa-solid fa-truck-front text-xl"></i>
+          </div>
+          <h3 class="mt-4 text-xl font-bold text-slate-900">Multimoda Transportasi</h3>
+          <p class="mt-2 text-slate-600">
+            Armada transportasi disesuaikan dengan kebutuhan kargo dengan aman hingga lokasi tujuan
           </p>
         </div>
-        <div class="mt-10 grid md:grid-cols-3 gap-6">
-          <div class="p-6 rounded-2xl bg-white shadow-soft group hover:scale-[1.02] transition">
-            <span
-              class="inline-flex w-12 h-12 items-center justify-center rounded-full bg-primary-100 text-primary-600 font-bold text-xl group-hover:bg-primary-600 group-hover:text-white transition-colors"
-              >1</span
-            >
-            <h3 class="mt-4 font-bold text-lg text-slate-900">Hubungi Kami</h3>
-            <p class="text-slate-600 mt-1">
-              Sampaikan kebutuhan pengiriman: jenis muatan, titik jemput, dan
-              tujuan.
-            </p>
+        <!-- Card 2 -->
+        <div
+          class="p-6 rounded-2xl bg-white shadow-soft hover:shadow-lg transition border-b-4 border-transparent hover:border-primary-500">
+          <div class="w-12 h-12 rounded-md bg-primary-600 text-white grid place-items-center">
+            <i class="fa-solid fa-warehouse text-xl"></i>
           </div>
-          <div class="p-6 rounded-2xl bg-white shadow-soft group hover:scale-[1.02] transition">
-            <span
-              class="inline-flex w-12 h-12 items-center justify-center rounded-full bg-primary-100 text-primary-600 font-bold text-xl group-hover:bg-primary-600 group-hover:text-white transition-colors"
-              >2</span
-            >
-            <h3 class="mt-4 font-bold text-lg text-slate-900">Konsultasi & Penawaran</h3>
-            <p class="text-slate-600 mt-1">
-              Survey (bila perlu), skema armada, dan penawaran harga terbaik.
-            </p>
-          </div>
-          <div class="p-6 rounded-2xl bg-white shadow-soft group hover:scale-[1.02] transition">
-            <span
-              class="inline-flex w-12 h-12 items-center justify-center rounded-full bg-primary-100 text-primary-600 font-bold text-xl group-hover:bg-primary-600 group-hover:text-white transition-colors"
-              >3</span
-            >
-            <h3 class="mt-4 font-bold text-lg text-slate-900">Eksekusi Pengiriman</h3>
-            <p class="text-slate-600 mt-1">
-              Loading, pengamanan muatan, perjalanan, hingga serah terima di
-              tujuan.
-            </p>
-          </div>
+          <h3 class="mt-4 text-xl font-bold text-slate-900">Warehouse & Open Yard</h3>
+          <p class="mt-2 text-slate-600">
+            Tempat penyimpanan dan konsolidasi kargo yang akan dimuat agar aman dan terjaga
+          </p>
         </div>
-        <div class="text-center mt-10">
-          <a
-            href="https://wa.me/628155000151?text=Halo%20Seansaka%2C%20saya%20ingin%20memesan%20jasa%20pengiriman."
-            class="inline-flex items-center gap-2 px-6 py-3 rounded-md bg-primary-600 text-white hover:bg-primary-700 font-semibold shadow-md"
-            >Mulai Konsultasi</a
-          >
+        <!-- Card 3 -->
+        <div
+          class="p-6 rounded-2xl bg-white shadow-soft hover:shadow-lg transition border-b-4 border-transparent hover:border-primary-500">
+          <div class="w-12 h-12 rounded-md bg-primary-600 text-white grid place-items-center">
+            <i class="fa-solid fa-dolly text-xl"></i>
+          </div>
+          <h3 class="mt-4 text-xl font-bold text-slate-900">Rental Material Handling & Lifting</h3>
+          <p class="mt-2 text-slate-600">
+            Alat bantu handling & lifting untuk bongkar muat secara aman dan efisien
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- CTA Banner -->
-    <section class="relative">
-      <div class="max-w-7xl mx-auto px-4">
-        <div
-          class="relative overflow-hidden rounded-3xl bg-primary-600 text-white p-8 md:p-12 shadow-xl shadow-orange-200"
-        >
-          <!-- Pattern background overlay -->
+  <!-- Keunggulan -->
+  <section id="keunggulan" class="py-16 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-10 items-center">
+      <!-- Konten teks -->
+      <div>
+        <div class="text-center lg:text-left max-w-2xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">
+            Kenapa Memilih Kami?
+          </h2>
+          <p class="mt-3 text-slate-600">
+            Solusi penanganan kargo secara <span class="font-semibold text-primary-600">tepat dan efisien</span>
+          </p>
+        </div>
+
+        <!-- Card keunggulan -->
+        <div class="mt-10 grid sm:grid-cols-2 gap-6">
           <div
-            class="absolute inset-0 opacity-10 pointer-events-none"
-            style="
+            class="py-6 px-7 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-lg hover:border-primary-200 transition transform hover:-translate-y-1">
+            <h3 class="text-lg font-bold text-slate-800"><i
+                class="fa-solid fa-headset mr-2 text-primary-600"></i>Layanan Responsif</h3>
+            <p class="mt-2 text-slate-600 text-sm">
+              Siap membantu memberikan solusi 24 jam
+            </p>
+          </div>
+          <div
+            class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-lg hover:border-primary-200 transition transform hover:-translate-y-1">
+            <h3 class="text-lg font-bold text-slate-800"><i
+                class="fa-solid fa-truck-ramp-box mr-2 text-primary-600"></i>Armada Lengkap</h3>
+            <p class="mt-2 text-slate-600 text-sm">
+              Container trailer, sliding trailer, self loader, lowbed, multiaxle modular trailer, prime mover 6x6/6x4,
+              dan perlengkapan fly over bridge
+            </p>
+          </div>
+          <div
+            class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-lg hover:border-primary-200 transition transform hover:-translate-y-1">
+            <h3 class="text-lg font-bold text-slate-800"><i
+                class="fa-solid fa-shield-halved mr-2 text-primary-600"></i>Aman & Berpengalaman</h3>
+            <p class="mt-2 text-slate-600 text-sm">
+              Senantiasa memperhatikan keamanan kargo pada saat bongkar muat hingga ke tempat tujuan
+            </p>
+          </div>
+          <div
+            class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-lg hover:border-primary-200 transition transform hover:-translate-y-1">
+            <h3 class="text-lg font-bold text-slate-800"><i
+                class="fa-regular fa-calendar-check mr-2 text-primary-600"></i>Jadwal Terencana</h3>
+            <p class="mt-2 text-slate-600 text-sm">Pemilihan jalur yang tepat sehingga jadwal pengiriman dapat
+              direncanakan dengan baik dan efektif</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gambar -->
+      <div class="flex justify-center lg:justify-end">
+        <img src="./img/img-4.jpg" alt="truk pengangkut alat berat"
+          class="w-full max-w-md lg:max-w-lg rounded-2xl shadow-soft border-4 border-white" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Proses -->
+  <section id="proses" class="py-16 md:py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">
+          Proses Pemesanan
+        </h2>
+        <p class="mt-3 text-slate-600">
+          Mudah dan transparan dari awal sampai akhir.
+        </p>
+      </div>
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl bg-white shadow-soft group hover:scale-[1.02] transition">
+          <span
+            class="inline-flex w-12 h-12 items-center justify-center rounded-full bg-primary-100 text-primary-600 font-bold text-xl group-hover:bg-primary-600 group-hover:text-white transition-colors">1</span>
+          <h3 class="mt-4 font-bold text-md text-slate-900">Sampaikan Kebutuhan Pengiriman Kargo </h3>
+          <p class="text-slate-600 mt-1 text-sm">
+            Mulai dari jenis kargo, dimensi, berat, tempat asal penjemputan hingga destinasi tujuan kargo yang akan
+            dikirim, sertakan juga lampiran packing list kargo agar mempermudah pengaturan dan penanganan selama proses
+            pengiriman
+          </p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white shadow-soft group hover:scale-[1.02] transition">
+          <span
+            class="inline-flex w-12 h-12 items-center justify-center rounded-full bg-primary-100 text-primary-600 font-bold text-xl group-hover:bg-primary-600 group-hover:text-white transition-colors">2</span>
+          <h3 class="mt-4 font-bold text-md text-slate-900">Konsultasi & Penawaran Pengiriman Kargo</h3>
+          <p class="text-slate-600 mt-1 text-sm">
+            Sebelum order jasa pengiriman, pastikan kesiapan kargo yang akan dikirim dalam kondisi baik dan tidak rusak.
+            Kemudian penawaran biaya keseluruhan proses pengiriman kargo didiskusikan terlebih dahulu sesuai rencana
+            yang diinginkan sebelum disampaikan
+          </p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white shadow-soft group hover:scale-[1.02] transition">
+          <span
+            class="inline-flex w-12 h-12 items-center justify-center rounded-full bg-primary-100 text-primary-600 font-bold text-xl group-hover:bg-primary-600 group-hover:text-white transition-colors">3</span>
+          <h3 class="mt-4 font-bold text-md text-slate-900">Eksekusi Penanganan Pengiriman Kargo</h3>
+          <p class="text-slate-600 mt-1 text-sm">
+            Eksekusi akan dilakukan dengan memperhatikan pengaman kargo, rute dan waktu tempuh agar berjalan dengan baik
+            sampai destinasi tujuan akhir pengiriman
+          </p>
+        </div>
+      </div>
+      <div class="text-center mt-10">
+        <a href="https://wa.me/628155000151?text=Halo%20Seansaka%2C%20saya%20ingin%20memesan%20jasa%20pengiriman."
+          class="inline-flex items-center gap-2 px-6 py-3 rounded-md bg-primary-600 text-white hover:bg-primary-700 font-semibold shadow-md">
+          <i class="fa-brands fa-whatsapp"></i> Mulai Konsultasi
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="relative">
+    <div class="max-w-7xl mx-auto px-4">
+      <div
+        class="relative overflow-hidden rounded-3xl bg-primary-600 text-white p-8 md:p-12 shadow-xl shadow-orange-200">
+        <!-- Pattern background overlay -->
+        <div class="absolute inset-0 opacity-10 pointer-events-none" style="
               background-image: radial-gradient(
                   circle at 20% 20%,
                   #fff 2px,
@@ -469,166 +352,106 @@
                 ),
                 radial-gradient(circle at 80% 40%, #fff 2px, transparent 2px);
               background-size: 40px 40px;
-            "
-          ></div>
-          <div class="relative">
-            <h3 class="text-2xl md:text-3xl font-bold">
-              Butuh Pengiriman Trafo atau Alat Berat?
-            </h3>
-            <p class="mt-2 text-white/90">
-              Kami siap bantu dari perencanaan hingga eksekusi. Konsultasi
-              gratis!
-            </p>
-            <div class="mt-6 flex flex-col sm:flex-row gap-3">
-              <a
-                href="https://wa.me/628155000151?text=Halo%20Seansaka%2C%20saya%20ingin%20konsultasi."
-                class="px-6 py-3 rounded-md bg-white text-primary-600 font-bold hover:bg-slate-50"
-                >Chat WhatsApp</a
-              >
-              <!-- Link Telepon tidak tersedia di info baru, bisa diarahkan ke WA juga atau dihapus -->
-              <!-- <a
-                href="tel:08155000151"
-                class="px-6 py-3 rounded-md border border-white hover:bg-primary-500"
-                >Telepon</a
-              > -->
-            </div>
+            "></div>
+        <div class="relative">
+          <h3 class="text-2xl md:text-3xl font-bold">
+            Butuh Jasa Seperti Layanan Kami?
+          </h3>
+          <p class="mt-2 text-white/90">
+            Kami siap membantu berdiskusi mulai dari perencanaan hingga eksekusi pengiriman, Konsultasi Gratis!
+          </p>
+          <div class="mt-6 flex flex-col sm:flex-row gap-3">
+            <a href="https://wa.me/628155000151?text=Halo%20Seansaka%2C%20saya%20ingin%20konsultasi."
+              class="px-6 py-3 rounded-md bg-white text-primary-600 font-bold hover:bg-slate-50"><i
+                class="fa-brands fa-whatsapp mr-1"></i> Chat WhatsApp</a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Kontak -->
-    <section id="kontak" class="py-16 md:py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4">
-        <div class="grid md:grid-cols-2 gap-10">
-          <div>
-            <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">
-              Kontak & Alamat
-            </h2>
-            <p class="mt-3 text-slate-600">
-              Hubungi kami untuk konsultasi dan penawaran terbaik.
-            </p>
-            <ul class="mt-6 space-y-4 text-slate-700">
-              <li>
-                <strong class="block text-slate-900 mb-1">Nama Perusahaan:</strong>
-                PT. Seansaka Sinergi Transportasi
-              </li>
-              <li>
-                <strong class="block text-slate-900 mb-1">Alamat:</strong>
-                 Jl. Menganti Karangan No.32 SOHO Citraland, Desa/Kelurahan Babatan, Kec. Wiyung, Kota Surabaya 60228
-              </li>
-              <li>
-                <strong class="block text-slate-900 mb-1">WhatsApp/Mobile:</strong>
-                <a href="https://wa.me/628155000151" class="text-primary-600 font-bold hover:underline"
-                  >081-55000-151</a
-                >
-              </li>
-              <li>
-                <strong class="block text-slate-900 mb-1">Email:</strong>
-                <a href="mailto:marketing@seansaka.com" class="hover:text-primary-600 transition"
-                  >marketing@seansaka.com</a
-                >
-              </li>
-            </ul>
-            <div class="mt-8 flex gap-3">
-              <a
-                href="https://wa.me/628155000151?text=Halo%20Seansaka%2C%20saya%20ingin%20konsultasi."
-                class="px-5 py-3 rounded-md bg-green-600 text-white hover:bg-green-700 shadow-md flex items-center gap-2"
-              >
-                <!-- WA Icon -->
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.62-6.003C.122 5.29 5.33 0 12.06 0c3.182 0 6.167 1.24 8.41 3.49a11.77 11.77 0 013.48 8.39c-.003 6.73-5.31 11.94-11.84 11.94a11.9 11.9 0 01-6.012-1.62L.057 24zm6.597-3.807c1.72.995 3.27 1.6 5.392 1.602 5.448 0 9.889-4.43 9.892-9.885.003-5.462-4.415-9.89-9.872-9.893-5.452-.003-9.89 4.41-9.894 9.873-.002 2.225.651 3.891 1.746 5.634L3.53 20.47l3.123-.277z"/></svg>
-                Chat WhatsApp
-              </a>
-              <a
-                href="mailto:marketing@seansaka.com?subject=Permintaan%20Penawaran%20-%20Seansaka"
-                class="px-5 py-3 rounded-md border border-slate-300 text-slate-700 hover:bg-slate-50 hover:border-primary-600 hover:text-primary-600"
-                >Kirim Email</a
-              >
-            </div>
+  <!-- Kontak -->
+  <section id="kontak" class="py-16 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-10">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">
+            Kontak & Alamat
+          </h2>
+          <p class="mt-3 text-slate-600">
+            Hubungi kami untuk konsultasi dan penawaran terbaik.
+          </p>
+          <ul class="mt-6 space-y-4 text-slate-700">
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-location-dot mt-1 text-primary-600"></i>
+              <span>
+                <strong>PT. Seansaka Sinergi Transportasi</strong><br>
+                SOHO Citraland, Jl. Menganti Karangan No.32, Babatan, Wiyung, Surabaya Barat 60228
+              </span>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-envelope text-primary-600"></i>
+              <p>Email:</p>
+              <a href="mailto:marketing@seansaka.com"
+                class="hover:text-primary-600 transition">marketing@seansaka.com</a>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-phone text-primary-600"></i>
+              <p>Call Center</p>
+              <p>|</p>
+              <span>+6281 55000 151</span>
+            </li>
+          </ul>
+          <div class="mt-8 flex gap-3">
+            <a href="https://wa.me/628155000151?text=Halo%20Seansaka%2C%20saya%20ingin%20konsultasi."
+              class="px-5 py-3 rounded-md bg-green-600 text-white hover:bg-green-700 shadow-md flex items-center gap-2">
+              <i class="fa-brands fa-whatsapp text-xl"></i>
+              Chat WhatsApp
+            </a>
+            <a href="mailto:marketing@seansaka.com?subject=Permintaan%20Penawaran%20-%20Seansaka"
+              class="px-5 py-3 rounded-md border border-slate-300 text-slate-700 hover:bg-slate-50 hover:border-primary-600 hover:text-primary-600">
+              <i class="fa-regular fa-envelope mr-1"></i> Kirim Email
+            </a>
           </div>
-          <!-- Peta Baru (Surabaya) -->
-          <div class="rounded-2xl overflow-hidden shadow-soft min-h-[300px] border border-slate-100">
-            <iframe
-              title="Lokasi Kantor Seansaka Surabaya"
-              class="w-full h-[300px] md:h-full"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps?q=Jl.+Menganti+Karangan+No.32+SOHO+Citraland,+Babatan,+Wiyung,+Surabaya&output=embed"
-            ></iframe>
-          </div>
+        </div>
+        <!-- Peta Baru (Surabaya) -->
+        <div class="rounded-2xl overflow-hidden shadow-soft min-h-[300px] border border-slate-100">
+          <iframe title="Lokasi Kantor Seansaka Surabaya" class="w-full h-[300px] md:h-full" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Jl.+Menganti+Karangan+No.32+SOHO+Citraland,+Babatan,+Wiyung,+Surabaya&output=embed"></iframe>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="text-slate-900 text-gray shadow-lg">
-      <div class="max-w-7xl mx-auto px-4 py-12">
-        <div class="grid md:grid-cols-2 gap-8 items-center">
-          <div>
-            <div class="flex items-center gap-3 mb-4">
-              <!-- Logo dengan background putih agar terlihat jelas di footer gelap -->
-               <img src="./img/logo.jpg" alt="logo seansaka" class="w-44 bg-white py-2 px-2 rounded-md" />
-            </div>
-            <h3 class="text-xl font-bold mb-2">PT. Seansaka Sinergi Transportasi</h3>
-            <p class="text-gray/70 max-w-sm text-sm leading-relaxed">
-              Jasa pengiriman trafo & alat berat yang aman, cepat, dan
-              profesional. Melayani seluruh Indonesia dari Surabaya.
-            </p>
-          </div>
-          <div class="md:text-right">
-            <p class="text-gray/60 mb-2">Butuh bantuan cepat?</p>
-            <a
-              href="https://wa.me/628155000151"
-              class="inline-flex items-center gap-2 px-6 py-3 rounded-md bg-primary-600 text-white font-bold hover:bg-primary-500 transition-colors"
-              >Hubungi Kami</a
-            >
-          </div>
-        </div>
-        <div class="mt-10 pt-6 border-t border-white/10 text-sm text-gray/50 flex flex-col md:flex-row justify-between items-center gap-2">
-            <p>© <span id="year"></span> PT. Seansaka Sinergi Transportasi. All rights reserved.</p>
-            <p>www.seansaka.com</p>
-        </div>
-      </div>
-    </footer>
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/628155000151?text=Halo%20Seansaka%2C%20saya%20ingin%20konsultasi." aria-label="Chat WhatsApp"
+    class="fixed bottom-5 right-5 z-50 inline-flex items-center justify-center w-14 h-14 rounded-full bg-green-500 text-white shadow-lg hover:scale-110 transition duration-300">
+    <i class="fa-brands fa-whatsapp text-3xl"></i>
+  </a>
 
-    <!-- Floating WhatsApp Button (Hijau agar ikonik WA, atau bisa diubah orange jika mau seragam) -->
-    <a
-      href="https://wa.me/628155000151?text=Halo%20Seansaka%2C%20saya%20ingin%20konsultasi."
-      aria-label="Chat WhatsApp"
-      class="fixed bottom-5 right-5 z-50 inline-flex items-center justify-center w-14 h-14 rounded-full bg-green-500 text-white shadow-lg hover:scale-110 transition duration-300"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        class="w-8 h-8"
-      >
-        <path
-          d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.62-6.003C.122 5.29 5.33 0 12.06 0c3.182 0 6.167 1.24 8.41 3.49a11.77 11.77 0 013.48 8.39c-.003 6.73-5.31 11.94-11.84 11.94a11.9 11.9 0 01-6.012-1.62L.057 24zm6.597-3.807c1.72.995 3.27 1.6 5.392 1.602 5.448 0 9.889-4.43 9.892-9.885.003-5.462-4.415-9.89-9.872-9.893-5.452-.003-9.89 4.41-9.894 9.873-.002 2.225.651 3.891 1.746 5.634L3.53 20.47l3.123-.277zM8.87 7.36c-.147-.327-.303-.334-.444-.34-.114-.005-.246-.005-.379-.005a.73.73 0 00-.529.246c-.183.2-.694.676-.694 1.65s.71 1.916.81 2.05c.1.133 1.387 2.22 3.36 3.02 1.66.654 1.997.525 2.355.492.36-.033 1.164-.476 1.329-.936.164-.46.164-.854.115-.936-.049-.082-.18-.131-.379-.23-.2-.098-1.164-.573-1.343-.638-.18-.065-.31-.098-.444.098-.133.197-.51.638-.625.77-.115.131-.23.148-.43.049-.2-.098-.843-.31-1.604-.988-.592-.527-.992-1.177-1.107-1.375-.115-.197-.012-.304.086-.402.088-.088.2-.23.295-.344.098-.115.131-.197.197-.328.065-.131.033-.246-.016-.344-.049-.098-.43-1.038-.59-1.416z"
-        />
-      </svg>
-    </a>
+  <script>
+    // Tahun dinamis (untuk footer jika diaktifkan)
+    const yearSpan = document.getElementById("year");
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
 
-    <script>
-      // Tahun dinamis
-      document.getElementById("year").textContent = new Date().getFullYear();
+    // Navbar shadow saat scroll
+    const navbar = document.getElementById("navbar");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 8) {
+        navbar.classList.add("shadow-soft");
+      } else {
+        navbar.classList.remove("shadow-soft");
+      }
+    });
 
-      // Navbar shadow saat scroll
-      const navbar = document.getElementById("navbar");
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 8) {
-          navbar.classList.add("shadow-soft");
-        } else {
-          navbar.classList.remove("shadow-soft");
-        }
-      });
+    // Toggle mobile menu
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+</body>
 
-      // Toggle mobile menu
-      const menuBtn = document.getElementById("menuBtn");
-      const mobileMenu = document.getElementById("mobileMenu");
-      menuBtn.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-      });
-    </script>
-  </body>
 </html>
